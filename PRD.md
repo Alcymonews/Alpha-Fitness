@@ -132,3 +132,12 @@ Contato
 * Agendamento de treinos.
 * Integração com WhatsApp.
 * Modo escuro.
+
+11. Paleta de cores
+
+* #121212
+* #1E1E1E
+* #FFC107
+* #FFFFFF
+* #BDBDBD
+
