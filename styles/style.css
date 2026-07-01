@@ -246,6 +246,71 @@ p {
     scroll-margin-top: 6rem;
 }
 
+/* Sobre a Academia - Fase 4 */
+.section-space {
+    padding-block: clamp(4rem, 8vw, 6.5rem);
+}
+
+.about-section {
+    scroll-margin-top: 6rem;
+    background:
+        linear-gradient(180deg, var(--color-bg), var(--color-surface));
+}
+
+.about-section h2 {
+    max-width: 34rem;
+    margin-bottom: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-wrap: balance;
+}
+
+.about-intro {
+    max-width: 48rem;
+    margin-bottom: 0;
+    color: var(--color-muted);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+}
+
+.about-card {
+    position: relative;
+    min-height: 17rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: rgba(30, 30, 30, 0.88);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 193, 7, 0.5);
+    background: rgba(30, 30, 30, 1);
+}
+
+.about-card-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 6px;
+    background: rgba(255, 193, 7, 0.12);
+    color: var(--color-brand);
+    font-weight: 900;
+}
+
+.about-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.about-card p {
+    margin-bottom: 0;
+    font-size: 0.98rem;
+}
+
 /* Rodape */
 .site-footer {
     padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem;
@@ -369,5 +434,14 @@ p {
 
     .hero-cta {
         width: 100%;
+    }
+
+    .section-space {
+        padding-block: 3.5rem;
+    }
+
+    .about-card {
+        min-height: auto;
+        padding: 1.25rem;
     }
 }
