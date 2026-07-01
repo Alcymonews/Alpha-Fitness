@@ -242,10 +242,6 @@ p {
     min-width: 10rem;
 }
 
-.section-anchor {
-    scroll-margin-top: 6rem;
-}
-
 /* Sobre a Academia - Fase 4 */
 .section-space {
     padding-block: clamp(4rem, 8vw, 6.5rem);
@@ -309,6 +305,120 @@ p {
 .about-card p {
     margin-bottom: 0;
     font-size: 0.98rem;
+}
+
+/* Planos - Fase 5 */
+.plans-section {
+    scroll-margin-top: 6rem;
+    background:
+        linear-gradient(180deg, var(--color-surface), var(--color-bg));
+}
+
+.section-heading {
+    max-width: 44rem;
+}
+
+.section-heading h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.section-heading p:not(.eyebrow) {
+    margin-bottom: 0;
+    font-size: clamp(1rem, 1.5vw, 1.12rem);
+}
+
+.plan-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: rgba(30, 30, 30, 0.92);
+    color: var(--color-white);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 193, 7, 0.45);
+    box-shadow: 0 24px 54px rgba(0, 0, 0, 0.28);
+}
+
+.plan-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+}
+
+.plan-card-featured {
+    border-color: var(--color-brand);
+    background:
+        linear-gradient(180deg, rgba(255, 193, 7, 0.1), transparent 34%),
+        rgba(30, 30, 30, 0.96);
+}
+
+.plan-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 6px;
+    background: var(--color-brand);
+    color: var(--color-bg);
+    font-size: 0.78rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.plan-name {
+    margin-bottom: 1rem;
+    padding-right: 6rem;
+    font-size: 1.4rem;
+}
+
+.plan-price {
+    margin-bottom: 1.35rem;
+    color: var(--color-white);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.plan-price span {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.plan-benefits {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    color: var(--color-muted);
+    list-style: none;
+}
+
+.plan-benefits li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.plan-benefits li::before {
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: var(--color-brand);
+    content: "";
+}
+
+.plan-button {
+    width: 100%;
+    margin-top: auto;
 }
 
 /* Rodape */
@@ -443,5 +553,19 @@ p {
     .about-card {
         min-height: auto;
         padding: 1.25rem;
+    }
+
+    .plan-card .card-body {
+        padding: 1.25rem;
+    }
+
+    .plan-name {
+        padding-right: 0;
+    }
+
+    .plan-badge {
+        position: static;
+        align-self: flex-start;
+        margin: 1rem 0 0 1.25rem;
     }
 }
