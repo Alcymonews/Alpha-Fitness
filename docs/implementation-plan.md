@@ -6,7 +6,7 @@ Organizar o desenvolvimento do site Alpha Fitness em fases claras, seguindo os r
 
 ## 2. Escopo Geral
 
-O site sera desenvolvido com HTML5, CSS3 e JavaScript, mantendo codigo organizado, responsivo e compativel com navegadores modernos.
+O site sera desenvolvido com HTML5, CSS3 e JavaScript e bootstrap, mantendo codigo organizado, responsivo e compativel com navegadores modernos.
 
 Paginas e secoes previstas:
 
